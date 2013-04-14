@@ -6,3 +6,4 @@
 (require 'indent-init)
 (require 'backup-init)
 (require 'appearance-init)
+(require 'action-init)
