@@ -1,4 +1,4 @@
-(load-file "./config.el")
+(load-file "~/.emacs.d/config.el")
 (add-to-list 'load-path inits-dir)
 
 (require 'package-init)
