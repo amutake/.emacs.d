@@ -5,3 +5,4 @@
 (require 'save-hook-init)
 (require 'indent-init)
 (require 'backup-init)
+(require 'appearance-init)
