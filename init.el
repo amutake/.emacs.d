@@ -1,6 +1,5 @@
-(defun user-emacs-directory "~/.emacs.d/")
-(add-to-list 'load-path
-	     (concat user-emacs-directory "inits"))
+(load-file "./config.el")
+(add-to-list 'load-path inits-dir)
 
 (require 'package-init)
 (require 'save-hook-init)
