@@ -10,3 +10,8 @@
 (require 'auto-complete)
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
+
+;; undo/redo
+(require 'undo-tree)
+(global-undo-tree-mode t)
+(global-set-key (kbd "C-M-/") 'undo-tree-redo)
