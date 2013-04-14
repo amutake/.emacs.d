@@ -1,10 +1,6 @@
-(when (require 'package nil t)
-  (add-to-list 'package-archives
-	       '("melpa" . "http://melpa.milkbox.net/packages/"))
-  (add-to-list 'package-archives
-	       '("marmalade" . "http://marmalade-repo.org/packages/"))
-  (package-initialize))
+(defun user-emacs-directory "~/.emacs.d/")
+(add-to-list 'load-path
+	     (concat user-emacs-directory "inits"))
 
-(setq require-final-newline t)
-(add-hook 'before-save-hook
-          'delete-trailing-whitespace)
+(require 'package-init)
+(require 'save-hook-init)
