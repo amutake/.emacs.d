@@ -10,3 +10,6 @@
           (lambda ()
             (ghc-init)
             (flymake-mode)))
+
+;; ProofGeneral
+(require 'proof-site)
