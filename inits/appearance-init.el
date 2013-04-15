@@ -18,6 +18,3 @@
 (set-face-attribute 'default nil
                     :family "Ubuntu Mono"
                     :height 118)
-(set-fontset-font
- nil 'japanese-jisx0208
- (font-spec :family "IPAゴシック"))
