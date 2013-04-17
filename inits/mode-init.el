@@ -13,3 +13,7 @@
 
 ;; ProofGeneral
 (require 'proof-site)
+(add-hook 'coq-mode-hook
+          (lambda ()
+            (define-key holes-mode-map (kbd "C-c C-j") nil)
+            (define-key coq-mode-map (kbd "C-c C-j") 'proof-goto-point)))
