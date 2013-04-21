@@ -9,7 +9,8 @@
 (add-hook 'haskell-mode-hook
           (lambda ()
             (ghc-init)
-            (flymake-mode)))
+            (flymake-mode)
+            (turn-on-haskell-indentation)))
 
 ;; ProofGeneral
 (require 'proof-site)
