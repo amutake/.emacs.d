@@ -21,3 +21,8 @@
 (set-face-attribute 'default nil
                     :family "Ubuntu Mono"
                     :height 118)
+
+;; hl-mode
+(when (window-system)
+  (global-hl-line-mode)
+  (set-face-background hl-line-face "gray13"))
